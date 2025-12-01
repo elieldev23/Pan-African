@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Figures and Their Contributions</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pan-African &amp; Transnational Feminism</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="origins.html">Origins</a>
+      <a href="key-figures.html" class="active">Key Figures</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section fade">
+      <h2>Key Figures and Their Contributions</h2>
+
+      <p id="note5">
+        <strong>Una Marson</strong> was a Jamaican poet, journalist, and activist whose work linked the Caribbean,
+        Britain, and Africa. Historian Imaobong Umoren writes that Marson and her contemporaries expressed an
+        “internationalist consciousness” in the 1930s.&nbsp;<a href="#ref5"><sup>⁵</sup></a>
+      </p>
+
+      <p id="note6">
+        Marson herself insisted that “the status of women in our colonies must be raised if we are to speak of
+        progress,” a statement showing her belief that gender equality was impossible without dismantling colonial
+        power.&nbsp;<a href="#ref6"><sup>⁶</sup></a>
+      </p>
+
+      <p id="note7">
+        <strong>Ifi Amadiume</strong>, a Nigerian anthropologist, challenged Western categories by examining
+        indigenous African gender systems. Her research documented societies where gender roles were flexible or
+        nonbinary before colonial rule. She argued that African feminist analysis must be rooted in African histories
+        and “voicing feminisms” through local epistemologies.&nbsp;<a href="#ref7"><sup>⁷</sup></a>
+      </p>
+
+      <blockquote>
+        “African feminism is not an imitation of Western models; it is grounded in the specific histories and
+        struggles of African women.”
+      </blockquote>
+
+      <p id="note8">
+        <strong>Amina Mama</strong> has been central to articulating feminist thought in relation to Pan-African
+        liberation. She argues that feminism in Africa is deeply connected to the continent’s political struggles,
+        writing that African feminist work is part of “the continuing struggles for self-determination.”&nbsp;
+        <a href="#ref8"><sup>⁸</sup></a>
+      </p>
+
+      <p>
+        In the United States, <strong>Mary Church Terrell</strong> became a foundational internationalist figure.
+        Her lifelong motto, used throughout the National Association of Colored Women, was “Lifting as we climb,”
+        reflecting the collective commitment of Black women’s activism.
+      </p>
+
+      <p id="note9">
+        Likewise, <strong>Addie Hunton</strong> took part in international peace and women’s conferences; scholars
+        describe African American women like her as “true negotiators in the international arena.”&nbsp;
+        <a href="#ref9"><sup>⁹</sup></a>
+      </p>
+
+      <div class="image-grid">
+        <figure>
+          <img src="images/una-marson-bbc.png" alt="Una Marson speaking at a BBC microphone">
+          <figcaption>
+            Una Marson at the BBC, where she used radio to amplify Black voices and connect struggles across
+            the Caribbean, Africa, and Britain.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/ifi-amadiume.png" alt="Ifi Amadiume smiling">
+          <figcaption>
+            Ifi Amadiume, whose research on indigenous gender systems challenged narrow Western ideas about
+            African women’s lives.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/amina-mama.png" alt="Amina Mama wearing a colourful scarf">
+          <figcaption>
+            Amina Mama, a leading Pan-African feminist thinker, insists that feminism in Africa is part of
+            broader struggles for decolonisation and self-determination.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/mary-church-terrell.png" alt="Portrait of Mary Church Terrell">
+          <figcaption>
+            Mary Church Terrell, whose motto “Lifting as we climb” captured the collective ethic of Black women’s
+            organising in the early twentieth century.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/addie-hunton.png" alt="Portrait of Addie Hunton">
+          <figcaption>
+            Addie Hunton, part of a generation of African American women activists described as “true negotiators
+            in the international arena.”
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section fade" id="references">
+      <h2>References</h2>
+      <ol>
+        <li id="ref5">
+          ⁵ Umoren, “‘This Is the Age of Woman,’” 170.
+          <a href="#note5">↩</a>
+        </li>
+        <li id="ref6">
+          ⁶ Ibid., 175.
+          <a href="#note6">↩</a>
+        </li>
+        <li id="ref7">
+          ⁷ Ifi Amadiume, “African Women: Voicing Feminisms and Democratic Futures,”
+          <em>Macalester International</em> 10, no. 1 (2000): 55–75.
+          <a href="#note7">↩</a>
+        </li>
+        <li id="ref8">
+          ⁸ Mama, “Pan-Africanism and Feminism,” 109.
+          <a href="#note8">↩</a>
+        </li>
+        <li id="ref9">
+          ⁹ Céline Bell and Élodie Deroo, “Afro-American Women Activists as True Negotiators in the International Arena
+          (1893–1945),” <em>European Journal of American Studies</em> 13, no. 1 (2018).
+          <a href="#note9">↩</a>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Digital Project | Created by Marie-Moelly Boa for AFAM</p>
+  </footer>
+
+  <!-- Fade-in script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Origins of Pan-African Feminism</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pan-African &amp; Transnational Feminism</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="origins.html" class="active">Origins</a>
+      <a href="key-figures.html">Key Figures</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section fade">
+      <h2>Origins of Pan-African Feminism</h2>
+
+      <p id="note2">
+        Pan-African feminism grew from a shared experience of colonialism and the determination of African women
+        to organize across borders in pursuit of self-determination. As Amina Mama explains, African feminist
+        activism has always been transnational because “the divisions separating African women are artificial,
+        created by colonial boundaries.”&nbsp;<a href="#ref2"><sup>²</sup></a>
+      </p>
+
+      <p>
+        Women recognized early on that their liberation struggles were related. They participated in anti-colonial
+        movements, conferences, and organizations that connected African, Caribbean, and African American activists.
+        Through these networks, they began articulating ideas that linked gender equality, racial justice, and the
+        fight against imperial domination.
+      </p>
+
+      <blockquote>
+        “Pan-African feminist traditions grew from African women’s own political, social, and intellectual
+        frameworks—not from Western feminist models.”
+      </blockquote>
+
+      <p id="note3">
+        Ifi Amadiume emphasizes the depth of this internal organizing, arguing that African women “did not wait for
+        liberation from the outside; they created it from within the structures of their own societies.”&nbsp;
+        <a href="#ref3"><sup>³</sup></a>
+        This shows that Pan-African feminist traditions grew from African women’s own political, social, and
+        intellectual frameworks—not from Western feminist models.
+      </p>
+
+      <p id="note4">
+        Historian Imaobong D. Umoren also notes that early Black women activists across the Caribbean and Britain
+        displayed an “internationalist consciousness.”&nbsp;<a href="#ref4"><sup>⁴</sup></a>
+        This insight helps place African women’s activism within a broader global movement led by Black women who
+        understood their freedom as interconnected across continents.
+      </p>
+
+      <div class="image-grid">
+        <figure>
+          <img src="images/origins-women-council.png" alt="African women and men in a colonial-era council setting">
+          <figcaption>
+            Women and community leaders in a colonial-era setting, reminding us that African women were already
+            political actors within their own societies.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/origins-colonial-map.png" alt="Map of Africa during the colonial period showing imperial borders">
+          <figcaption>
+            Map of colonial Africa, illustrating the artificial borders created by European empires that
+            Pan-African feminists sought to challenge.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/origins-congress-1927.png" alt="Delegates at a Pan-African congress in the 1920s">
+          <figcaption>
+            Delegates at a Pan-African congress in the 1920s, where Black activists from Africa, the Caribbean,
+            Europe, and the Americas debated liberation and women’s rights together.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section fade" id="references">
+      <h2>References</h2>
+      <ol>
+        <li id="ref2">
+          ² Amina Mama, “Pan-Africanism and Feminism,” <em>Feminist Africa</em> 19 (2014): 102.
+          <a href="#note2">↩</a>
+        </li>
+        <li id="ref3">
+          ³ Ifi Amadiume, “African Women: Voicing Feminisms and Democratic Futures,”
+          <em>Macalester International</em> 10, no. 1 (2000): 60.
+          <a href="#note3">↩</a>
+        </li>
+        <li id="ref4">
+          ⁴ Imaobong D. Umoren, “‘This Is the Age of Woman’: Black Feminism and Black Internationalism in the Works of
+          Una Marson, 1928–1938,” <em>History Workshop Journal</em> 75, no. 1 (2013): 170.
+          <a href="#note4">↩</a>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Digital Project | Created by Marie-Moelly Boa for AFAM</p>
+  </footer>
+
+  <!-- Fade-in script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

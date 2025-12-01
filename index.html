@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pan-African &amp; Transnational Feminism – Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pan-African &amp; Transnational Feminism</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="origins.html">Origins</a>
+      <a href="key-figures.html">Key Figures</a>
+    </nav>
+  </header>
+    <!-- Hero Banner -->
+  <div class="hero">
+    <img src="images/banner-womanpower.png" alt="Woman Power Protest Photo">
+    <div class="hero-text">
+      Exploring the History of Pan-African & Transnational Feminism
+    </div>
+  </div>
+
+
+  <main>
+    <section class="content-section fade">
+      <h2>Welcome</h2>
+      <p>
+        This digital project explores Pan-African and transnational feminism by tracing its historical origins
+        and highlighting some of the key women who shaped its development. It shows how African, Caribbean,
+        and African American women have long understood their struggles as connected across colonial borders.
+      </p>
+
+      <blockquote>
+        “Pan-African feminist histories remind us that Black women have always organized across borders,
+        imagining freedom beyond empire.”
+      </blockquote>
+
+      <p>
+        Use the navigation above to read about:
+      </p>
+      <ul>
+        <li><strong>Origins</strong> – how Pan-African feminism emerged from anti-colonial struggles and women’s organising.</li>
+        <li><strong>Key Figures</strong> – short portraits of thinkers and activists whose work advanced Pan-African feminist ideas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Digital Project | Created by Marie-Moelly Boa for AFAM</p>
+  </footer>
+
+  <!-- Fade-in script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
