@@ -250,3 +250,9 @@ footer {
   max-width: 75%;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
+
+.note-highlight {
+  border-left: 4px solid #a66a61;
+  padding-left: 1rem;
+  font-style: italic;
+}
