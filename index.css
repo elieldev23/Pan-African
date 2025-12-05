@@ -256,3 +256,26 @@ footer {
   padding-left: 1rem;
   font-style: italic;
 }
+
+.note-background {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("images/note-portrait.jpg") center/cover no-repeat fixed;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-box {
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 6px;
+  line-height: 1.7;
+  max-width: 800px;
+  text-align: justify;
+}
