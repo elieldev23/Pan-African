@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline of Transnational Black Feminism</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pan-African &amp; Transnational Feminism</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="origins.html">Origins</a>
+      <a href="key-figures.html">Key Figures</a>
+      <a href="timeline.html" class="active">Timeline</a>
+      <a href="notes.html">Notes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section fade">
+      <h2>Timeline: A Century of Transnational Black Feminist Resistance</h2>
+
+      <p>
+        This timeline traces the evolution of transnational Black feminist thought, showing how Black women
+        moved from early international organizing to the development of formal academic theory. Across
+        continents and generations, these figures articulated a shared understanding of racial, gendered,
+        and colonial oppression as global and interconnected.
+      </p>
+    </section>
+
+    <section class="content-section fade">
+      <h2>Phase 1: Early International Consciousness (Late 1800s – 1920s)</h2>
+
+      <ul>
+        <li>
+          <strong>1890s – 1920s:</strong> <strong>Mary Church Terrell </strong> begins organizing with the <strong>International Council of Women</strong>. 
+          She argues that Black women’s liberation is a global human rights issue, not just a domestic civil rights one.
+        </li>
+
+        <li>
+          <strong>1917 – 1919:</strong> <strong>Addie Hunton </strong>travels to France during WWI. 
+          Her work links the racism faced by Black American soldiers to the colonial oppression of African and Caribbean people, 
+          creating the first "transnational" link in your analysis.
+        </li>
+
+        <li>
+          <strong>1918:</strong> <strong>Amy Ashwood Garvey</strong> co-founds the <strong>UNIA</strong> in Jamaica. 
+          She begins building the foundation for a Pan-Africanism that explicitly includes women’s leadership and economic autonomy.
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-section fade">
+      <h2>Phase 2: The Interwar &amp; Anti-Colonial Surge (1930s – 1940s)</h2>
+
+      <ul>
+        <li>
+          <strong>1932 – 1936:</strong> <strong>Una Marson </strong> moves to London. 
+          Her work with the League of Coloured Peoples identifies the <em>"double jeopardy"</em> of 
+          being Black and female in the heart of the British Empire.
+        </li>
+
+        <li>
+          <strong>1936:</strong> <strong>Eslanda Robeson </strong>begins her extensive travels across the African continent. 
+          Her anthropological fieldwork challenges Western myths by documenting the political power of African women.
+        </li>
+
+        <li>
+          <strong>1945:</strong> <strong>The 5th Pan-African Congress (Manchester)</strong>. 
+          Amy Ashwood Garvey and other women demand that gender equality be a central pillar of African independence movements.
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-section fade">
+      <h2>Phase 3: Connecting Movement to Theory (1980s – Present)</h2>
+
+      <ul>
+        <li>
+          <strong>1987:</strong> <strong>Ifi Amadiume </strong> publishes <em>Male Daughters, Female Husbands</em>. 
+          Her work provides the "theoretical grounding" for the activism seen in the previous decades, proving 
+          that the flexible gender systems these women fought for were rooted in indigenous African history.
+        </li>
+
+        <li>
+          <strong>Modern Day:</strong> The <em>"Global Map of Resistance" </em>continues as contemporary 
+          Black feminists use these historical frameworks to fight global systems of patriarchy and neo-colonialism.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Digital Project | Created by Marie-Moelly Boa for AFAM</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade");
+
+      if (!("IntersectionObserver" in window)) {
+        elements.forEach(el => el.classList.add("visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
